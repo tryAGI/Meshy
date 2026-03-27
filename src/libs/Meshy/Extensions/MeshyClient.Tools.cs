@@ -15,6 +15,7 @@ public static class MeshyToolExtensions
     /// <param name="client">The Meshy client to use for generation.</param>
     /// <param name="aiModel">AI model to use (default: latest).</param>
     /// <returns>An AIFunction that can be passed to ChatOptions.Tools.</returns>
+    [CLSCompliant(false)]
     public static AIFunction AsTextTo3DTool(
         this MeshyClient client,
         AiModel aiModel = AiModel.Latest)
@@ -57,6 +58,7 @@ public static class MeshyToolExtensions
     /// <param name="client">The Meshy client to use for generation.</param>
     /// <param name="aiModel">AI model to use (default: latest).</param>
     /// <returns>An AIFunction that can be passed to ChatOptions.Tools.</returns>
+    [CLSCompliant(false)]
     public static AIFunction AsImageTo3DTool(
         this MeshyClient client,
         AiModel aiModel = AiModel.Latest)
@@ -88,6 +90,7 @@ public static class MeshyToolExtensions
     /// <param name="client">The Meshy client to use for generation.</param>
     /// <param name="aiModel">AI model to use (default: latest).</param>
     /// <returns>An AIFunction that can be passed to ChatOptions.Tools.</returns>
+    [CLSCompliant(false)]
     public static AIFunction AsRetextureTool(
         this MeshyClient client,
         AiModel aiModel = AiModel.Latest)
@@ -120,6 +123,7 @@ public static class MeshyToolExtensions
     /// </summary>
     /// <param name="client">The Meshy client to use.</param>
     /// <returns>An AIFunction that can be passed to ChatOptions.Tools.</returns>
+    [CLSCompliant(false)]
     public static AIFunction AsGetTextTo3DTaskTool(this MeshyClient client)
     {
         ArgumentNullException.ThrowIfNull(client);
@@ -145,6 +149,7 @@ public static class MeshyToolExtensions
     /// </summary>
     /// <param name="client">The Meshy client to use.</param>
     /// <returns>An AIFunction that can be passed to ChatOptions.Tools.</returns>
+    [CLSCompliant(false)]
     public static AIFunction AsGetImageTo3DTaskTool(this MeshyClient client)
     {
         ArgumentNullException.ThrowIfNull(client);
@@ -170,6 +175,7 @@ public static class MeshyToolExtensions
     /// </summary>
     /// <param name="client">The Meshy client to use.</param>
     /// <returns>An AIFunction that can be passed to ChatOptions.Tools.</returns>
+    [CLSCompliant(false)]
     public static AIFunction AsGetRetextureTaskTool(this MeshyClient client)
     {
         ArgumentNullException.ThrowIfNull(client);
