@@ -128,7 +128,7 @@ namespace Meshy
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Meshy.RetextureTask>), JsonSerializerContext) as global::System.Collections.Generic.IList<global::Meshy.RetextureTask> ??
+                        (global::System.Collections.Generic.IList<global::Meshy.RetextureTask>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Meshy.RetextureTask>), JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -159,7 +159,7 @@ namespace Meshy
                     ).ConfigureAwait(false);
 
                     return
-                        await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Meshy.RetextureTask>), JsonSerializerContext).ConfigureAwait(false) as global::System.Collections.Generic.IList<global::Meshy.RetextureTask> ??
+                        (global::System.Collections.Generic.IList<global::Meshy.RetextureTask>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Meshy.RetextureTask>), JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)
