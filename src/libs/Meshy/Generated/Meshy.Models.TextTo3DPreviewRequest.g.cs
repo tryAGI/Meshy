@@ -110,10 +110,10 @@ namespace Meshy
         /// <summary>
         /// Initializes a new instance of the <see cref="TextTo3DPreviewRequest" /> class.
         /// </summary>
-        /// <param name="mode"></param>
         /// <param name="prompt">
         /// Description of the 3D object to generate
         /// </param>
+        /// <param name="mode"></param>
         /// <param name="modelType">
         /// Default Value: standard
         /// </param>
@@ -163,8 +163,8 @@ namespace Meshy
             bool? autoSize,
             global::Meshy.OriginAt? originAt)
         {
-            this.Prompt = prompt ?? throw new global::System.ArgumentNullException(nameof(prompt));
             this.Mode = mode;
+            this.Prompt = prompt ?? throw new global::System.ArgumentNullException(nameof(prompt));
             this.ModelType = modelType;
             this.ArtStyle = artStyle;
             this.AiModel = aiModel;
