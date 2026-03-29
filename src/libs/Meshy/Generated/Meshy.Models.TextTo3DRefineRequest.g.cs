@@ -89,10 +89,10 @@ namespace Meshy
         /// <summary>
         /// Initializes a new instance of the <see cref="TextTo3DRefineRequest" /> class.
         /// </summary>
-        /// <param name="mode"></param>
         /// <param name="previewTaskId">
         /// ID of a SUCCEEDED preview task
         /// </param>
+        /// <param name="mode"></param>
         /// <param name="enablePbr">
         /// Generate PBR texture maps<br/>
         /// Default Value: false
@@ -132,8 +132,8 @@ namespace Meshy
             bool? autoSize,
             global::Meshy.OriginAt? originAt)
         {
-            this.PreviewTaskId = previewTaskId ?? throw new global::System.ArgumentNullException(nameof(previewTaskId));
             this.Mode = mode;
+            this.PreviewTaskId = previewTaskId ?? throw new global::System.ArgumentNullException(nameof(previewTaskId));
             this.EnablePbr = enablePbr;
             this.TexturePrompt = texturePrompt;
             this.TextureImageUrl = textureImageUrl;
