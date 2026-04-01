@@ -355,6 +355,7 @@ namespace Meshy
             global::System.Collections.Generic.IList<global::Meshy.TargetFormat3D>? targetFormats = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Meshy.RetextureRequest
             {
                 InputTaskId = inputTaskId,

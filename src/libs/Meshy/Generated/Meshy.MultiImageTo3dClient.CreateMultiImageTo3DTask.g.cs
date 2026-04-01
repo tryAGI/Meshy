@@ -381,6 +381,7 @@ namespace Meshy
             global::Meshy.OriginAt? originAt = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Meshy.MultiImageTo3DRequest
             {
                 ImageUrls = imageUrls,

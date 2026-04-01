@@ -390,6 +390,7 @@ namespace Meshy
             global::Meshy.OriginAt? originAt = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Meshy.ImageTo3DRequest
             {
                 ImageUrl = imageUrl,
