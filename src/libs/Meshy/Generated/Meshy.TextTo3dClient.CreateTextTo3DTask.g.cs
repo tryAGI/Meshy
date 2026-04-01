@@ -322,7 +322,6 @@ namespace Meshy
         public async global::System.Threading.Tasks.Task<global::Meshy.CreateTaskResponse> CreateTextTo3DTaskAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Meshy.CreateTextTo3DTaskRequest
             {
             };

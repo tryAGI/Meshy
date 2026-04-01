@@ -362,7 +362,6 @@ namespace Meshy
             global::Meshy.AnimationPostProcess? postProcess = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Meshy.AnimationRequest
             {
                 RigTaskId = rigTaskId,
