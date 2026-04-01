@@ -336,7 +336,6 @@ namespace Meshy
             global::Meshy.AspectRatio? aspectRatio = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Meshy.TextToImageRequest
             {
                 AiModel = aiModel,

@@ -369,7 +369,6 @@ namespace Meshy
             string? textureImageUrl = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Meshy.RiggingRequest
             {
                 InputTaskId = inputTaskId,

@@ -333,7 +333,6 @@ namespace Meshy
             bool? generateMultiView = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Meshy.ImageToImageRequest
             {
                 AiModel = aiModel,
