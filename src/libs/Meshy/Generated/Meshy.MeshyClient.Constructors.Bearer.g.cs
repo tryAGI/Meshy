@@ -6,6 +6,7 @@ namespace Meshy
     public sealed partial class MeshyClient
     {
         /// <inheritdoc cref="MeshyClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::Meshy.EndPointAuthorization}?, bool)"/>
+
         public MeshyClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,

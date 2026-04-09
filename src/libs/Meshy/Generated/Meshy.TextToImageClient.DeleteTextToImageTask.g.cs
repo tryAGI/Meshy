@@ -5,6 +5,25 @@ namespace Meshy
 {
     public partial class TextToImageClient
     {
+
+
+        private static readonly global::Meshy.EndPointSecurityRequirement s_DeleteTextToImageTaskSecurityRequirement0 =
+            new global::Meshy.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Meshy.EndPointAuthorizationRequirement[]
+                {                    new global::Meshy.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Meshy.EndPointSecurityRequirement[] s_DeleteTextToImageTaskSecurityRequirements =
+            new global::Meshy.EndPointSecurityRequirement[]
+            {                s_DeleteTextToImageTaskSecurityRequirement0,
+            };
         partial void PrepareDeleteTextToImageTaskArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string id);
@@ -32,9 +51,15 @@ namespace Meshy
                 httpClient: HttpClient,
                 id: ref id);
 
+
+            var __authorizations = global::Meshy.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_DeleteTextToImageTaskSecurityRequirements,
+                operationName: "DeleteTextToImageTaskAsync");
+
             var __pathBuilder = new global::Meshy.PathBuilder(
                 path: $"/openapi/v1/text-to-image/{id}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -44,7 +69,7 @@ namespace Meshy
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
