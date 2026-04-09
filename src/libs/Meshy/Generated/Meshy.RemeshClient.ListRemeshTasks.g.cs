@@ -5,6 +5,25 @@ namespace Meshy
 {
     public partial class RemeshClient
     {
+
+
+        private static readonly global::Meshy.EndPointSecurityRequirement s_ListRemeshTasksSecurityRequirement0 =
+            new global::Meshy.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Meshy.EndPointAuthorizationRequirement[]
+                {                    new global::Meshy.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Meshy.EndPointSecurityRequirement[] s_ListRemeshTasksSecurityRequirements =
+            new global::Meshy.EndPointSecurityRequirement[]
+            {                s_ListRemeshTasksSecurityRequirement0,
+            };
         partial void PrepareListRemeshTasksArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref int? pageNum,
@@ -51,6 +70,12 @@ namespace Meshy
                 pageSize: ref pageSize,
                 sortBy: ref sortBy);
 
+
+            var __authorizations = global::Meshy.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ListRemeshTasksSecurityRequirements,
+                operationName: "ListRemeshTasksAsync");
+
             var __pathBuilder = new global::Meshy.PathBuilder(
                 path: "/openapi/v1/remesh",
                 baseUri: HttpClient.BaseAddress); 
@@ -58,7 +83,7 @@ namespace Meshy
                 .AddOptionalParameter("page_num", pageNum?.ToString())
                 .AddOptionalParameter("page_size", pageSize?.ToString())
                 .AddOptionalParameter("sort_by", sortBy?.ToValueString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -68,7 +93,7 @@ namespace Meshy
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

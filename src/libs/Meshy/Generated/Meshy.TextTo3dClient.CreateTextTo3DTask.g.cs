@@ -5,6 +5,25 @@ namespace Meshy
 {
     public partial class TextTo3dClient
     {
+
+
+        private static readonly global::Meshy.EndPointSecurityRequirement s_CreateTextTo3DTaskSecurityRequirement0 =
+            new global::Meshy.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Meshy.EndPointAuthorizationRequirement[]
+                {                    new global::Meshy.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Meshy.EndPointSecurityRequirement[] s_CreateTextTo3DTaskSecurityRequirements =
+            new global::Meshy.EndPointSecurityRequirement[]
+            {                s_CreateTextTo3DTaskSecurityRequirement0,
+            };
         partial void PrepareCreateTextTo3DTaskArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::Meshy.CreateTextTo3DTaskRequest request);
@@ -38,9 +57,15 @@ namespace Meshy
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::Meshy.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_CreateTextTo3DTaskSecurityRequirements,
+                operationName: "CreateTextTo3DTaskAsync");
+
             var __pathBuilder = new global::Meshy.PathBuilder(
                 path: "/openapi/v2/text-to-3d",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -50,7 +75,7 @@ namespace Meshy
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

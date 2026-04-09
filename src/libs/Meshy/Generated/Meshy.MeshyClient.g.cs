@@ -13,7 +13,7 @@ namespace Meshy
         /// <summary>
         /// 
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.meshy.ai";
+        public const string DefaultBaseUrl = "https://api.meshy.ai/";
 
         private bool _disposeHttpClient = true;
 
