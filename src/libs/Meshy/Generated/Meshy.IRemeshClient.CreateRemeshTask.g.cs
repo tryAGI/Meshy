@@ -8,11 +8,13 @@ namespace Meshy
         /// Create a Remesh task
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Meshy.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Meshy.CreateTaskResponse> CreateRemeshTaskAsync(
 
             global::Meshy.RemeshRequest request,
+            global::Meshy.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a Remesh task
@@ -43,6 +45,7 @@ namespace Meshy
         /// <param name="convertFormatOnly">
         /// Only convert format, skip remesh processing
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Meshy.CreateTaskResponse> CreateRemeshTaskAsync(
@@ -55,6 +58,7 @@ namespace Meshy
             bool? autoSize = default,
             global::Meshy.OriginAt? originAt = default,
             bool? convertFormatOnly = default,
+            global::Meshy.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

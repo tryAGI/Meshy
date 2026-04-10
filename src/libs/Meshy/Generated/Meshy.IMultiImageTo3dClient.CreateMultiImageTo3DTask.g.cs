@@ -8,11 +8,13 @@ namespace Meshy
         /// Create a Multi-Image to 3D task
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Meshy.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Meshy.CreateTaskResponse> CreateMultiImageTo3DTaskAsync(
 
             global::Meshy.MultiImageTo3DRequest request,
+            global::Meshy.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a Multi-Image to 3D task
@@ -61,6 +63,7 @@ namespace Meshy
         /// Default Value: false
         /// </param>
         /// <param name="originAt"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Meshy.CreateTaskResponse> CreateMultiImageTo3DTaskAsync(
@@ -82,6 +85,7 @@ namespace Meshy
             global::System.Collections.Generic.IList<global::Meshy.TargetFormat3D>? targetFormats = default,
             bool? autoSize = default,
             global::Meshy.OriginAt? originAt = default,
+            global::Meshy.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

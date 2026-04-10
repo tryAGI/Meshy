@@ -8,11 +8,13 @@ namespace Meshy
         /// Create a Text to Image task
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Meshy.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Meshy.CreateTaskResponse> CreateTextToImageTaskAsync(
 
             global::Meshy.TextToImageRequest request,
+            global::Meshy.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create a Text to Image task
@@ -29,6 +31,7 @@ namespace Meshy
         /// <param name="aspectRatio">
         /// Default Value: 1:1
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Meshy.CreateTaskResponse> CreateTextToImageTaskAsync(
@@ -37,6 +40,7 @@ namespace Meshy
             bool? generateMultiView = default,
             global::Meshy.TextToImageRequestPoseMode? poseMode = default,
             global::Meshy.AspectRatio? aspectRatio = default,
+            global::Meshy.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
