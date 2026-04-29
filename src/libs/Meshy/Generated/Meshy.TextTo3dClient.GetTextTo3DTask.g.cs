@@ -124,7 +124,7 @@ namespace Meshy
                 PrepareGetTextTo3DTaskRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id);
+                    id: id!);
 
                 return __httpRequest;
             }

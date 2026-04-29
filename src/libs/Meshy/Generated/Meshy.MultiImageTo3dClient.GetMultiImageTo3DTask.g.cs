@@ -124,7 +124,7 @@ namespace Meshy
                 PrepareGetMultiImageTo3DTaskRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id);
+                    id: id!);
 
                 return __httpRequest;
             }
