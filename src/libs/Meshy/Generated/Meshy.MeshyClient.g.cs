@@ -43,7 +43,7 @@ namespace Meshy
         /// <summary>
         /// 
         /// </summary>
-        public AnimationClient Animation => new AnimationClient(HttpClient, authorizations: Authorizations, options: Options)
+        public AnimationClient Animation => new AnimationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -52,7 +52,7 @@ namespace Meshy
         /// <summary>
         /// 
         /// </summary>
-        public BalanceClient Balance => new BalanceClient(HttpClient, authorizations: Authorizations, options: Options)
+        public BalanceClient Balance => new BalanceClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -61,7 +61,7 @@ namespace Meshy
         /// <summary>
         /// 
         /// </summary>
-        public ImageTo3dClient ImageTo3d => new ImageTo3dClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ImageTo3dClient ImageTo3d => new ImageTo3dClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -70,7 +70,7 @@ namespace Meshy
         /// <summary>
         /// 
         /// </summary>
-        public ImageToImageClient ImageToImage => new ImageToImageClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ImageToImageClient ImageToImage => new ImageToImageClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -79,7 +79,7 @@ namespace Meshy
         /// <summary>
         /// 
         /// </summary>
-        public MultiImageTo3dClient MultiImageTo3d => new MultiImageTo3dClient(HttpClient, authorizations: Authorizations, options: Options)
+        public MultiImageTo3dClient MultiImageTo3d => new MultiImageTo3dClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -88,7 +88,7 @@ namespace Meshy
         /// <summary>
         /// 
         /// </summary>
-        public RemeshClient Remesh => new RemeshClient(HttpClient, authorizations: Authorizations, options: Options)
+        public RemeshClient Remesh => new RemeshClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -97,7 +97,7 @@ namespace Meshy
         /// <summary>
         /// 
         /// </summary>
-        public RetextureClient Retexture => new RetextureClient(HttpClient, authorizations: Authorizations, options: Options)
+        public RetextureClient Retexture => new RetextureClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -106,7 +106,7 @@ namespace Meshy
         /// <summary>
         /// 
         /// </summary>
-        public RiggingClient Rigging => new RiggingClient(HttpClient, authorizations: Authorizations, options: Options)
+        public RiggingClient Rigging => new RiggingClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -115,7 +115,7 @@ namespace Meshy
         /// <summary>
         /// 
         /// </summary>
-        public TextTo3dClient TextTo3d => new TextTo3dClient(HttpClient, authorizations: Authorizations, options: Options)
+        public TextTo3dClient TextTo3d => new TextTo3dClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -124,7 +124,7 @@ namespace Meshy
         /// <summary>
         /// 
         /// </summary>
-        public TextToImageClient TextToImage => new TextToImageClient(HttpClient, authorizations: Authorizations, options: Options)
+        public TextToImageClient TextToImage => new TextToImageClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -163,10 +163,10 @@ namespace Meshy
         /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
         /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
         public MeshyClient(
-            global::System.Net.Http.HttpClient? httpClient = null,
-            global::System.Uri? baseUri = null,
-            global::System.Collections.Generic.List<global::Meshy.EndPointAuthorization>? authorizations = null,
-            global::Meshy.AutoSDKClientOptions? options = null,
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Uri? baseUri,
+            global::System.Collections.Generic.List<global::Meshy.EndPointAuthorization>? authorizations,
+            global::Meshy.AutoSDKClientOptions? options,
             bool disposeHttpClient = true)
         {
 
