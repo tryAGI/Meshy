@@ -94,6 +94,11 @@ namespace Meshy
         /// <summary>
         /// 
         /// </summary>
+        public static CreateTextTo3DTaskRequest FromPreview(global::Meshy.TextTo3DPreviewRequest? value) => new CreateTextTo3DTaskRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CreateTextTo3DTaskRequest(global::Meshy.TextTo3DRefineRequest value) => new CreateTextTo3DTaskRequest((global::Meshy.TextTo3DRefineRequest?)value);
 
         /// <summary>
@@ -108,6 +113,11 @@ namespace Meshy
         {
             Refine = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CreateTextTo3DTaskRequest FromRefine(global::Meshy.TextTo3DRefineRequest? value) => new CreateTextTo3DTaskRequest(value);
 
         /// <summary>
         /// 
