@@ -41,5 +41,6 @@ namespace Meshy
         public BalanceResponse()
         {
         }
+
     }
 }
