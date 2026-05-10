@@ -47,6 +47,13 @@ namespace Meshy
         /// <summary>
         /// 
         /// </summary>
+        public global::Meshy.TextTo3DPreviewRequest PickPreview() => IsPreview
+            ? Preview!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Preview' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Meshy.TextTo3DRefineRequest? Refine { get; init; }
 #else
@@ -73,6 +80,13 @@ namespace Meshy
             value = Refine;
             return IsRefine;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Meshy.TextTo3DRefineRequest PickRefine() => IsRefine
+            ? Refine!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Refine' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

@@ -76,5 +76,6 @@ namespace Meshy
         public RiggingRequest()
         {
         }
+
     }
 }

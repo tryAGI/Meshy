@@ -40,5 +40,6 @@ namespace Meshy
         public CreateTextTo3DTaskRequestDiscriminator()
         {
         }
+
     }
 }
