@@ -34,6 +34,26 @@ namespace Meshy
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickPreview(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Meshy.TextTo3DPreviewRequest? value)
+        {
+            value = Preview;
+            return IsPreview;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Meshy.TextTo3DPreviewRequest PickPreview() => IsPreview
+            ? Preview!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Preview' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Meshy.TextTo3DRefineRequest? Refine { get; init; }
 #else
@@ -47,6 +67,26 @@ namespace Meshy
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Refine))]
 #endif
         public bool IsRefine => Refine != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRefine(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Meshy.TextTo3DRefineRequest? value)
+        {
+            value = Refine;
+            return IsRefine;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Meshy.TextTo3DRefineRequest PickRefine() => IsRefine
+            ? Refine!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Refine' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -68,6 +108,11 @@ namespace Meshy
         /// <summary>
         /// 
         /// </summary>
+        public static CreateTextTo3DTaskRequest FromPreview(global::Meshy.TextTo3DPreviewRequest? value) => new CreateTextTo3DTaskRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CreateTextTo3DTaskRequest(global::Meshy.TextTo3DRefineRequest value) => new CreateTextTo3DTaskRequest((global::Meshy.TextTo3DRefineRequest?)value);
 
         /// <summary>
@@ -82,6 +127,11 @@ namespace Meshy
         {
             Refine = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CreateTextTo3DTaskRequest FromRefine(global::Meshy.TextTo3DRefineRequest? value) => new CreateTextTo3DTaskRequest(value);
 
         /// <summary>
         /// 
@@ -126,8 +176,8 @@ namespace Meshy
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Meshy.TextTo3DPreviewRequest?, TResult>? preview = null,
-            global::System.Func<global::Meshy.TextTo3DRefineRequest?, TResult>? refine = null,
+            global::System.Func<global::Meshy.TextTo3DPreviewRequest, TResult>? preview = null,
+            global::System.Func<global::Meshy.TextTo3DRefineRequest, TResult>? refine = null,
             bool validate = true)
         {
             if (validate)
@@ -151,8 +201,32 @@ namespace Meshy
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Meshy.TextTo3DPreviewRequest?>? preview = null,
-            global::System.Action<global::Meshy.TextTo3DRefineRequest?>? refine = null,
+            global::System.Action<global::Meshy.TextTo3DPreviewRequest>? preview = null,
+
+            global::System.Action<global::Meshy.TextTo3DRefineRequest>? refine = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsPreview)
+            {
+                preview?.Invoke(Preview!);
+            }
+            else if (IsRefine)
+            {
+                refine?.Invoke(Refine!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Meshy.TextTo3DPreviewRequest>? preview = null,
+            global::System.Action<global::Meshy.TextTo3DRefineRequest>? refine = null,
             bool validate = true)
         {
             if (validate)

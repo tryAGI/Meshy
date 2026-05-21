@@ -57,5 +57,6 @@ namespace Meshy
         public RiggingResult()
         {
         }
+
     }
 }
