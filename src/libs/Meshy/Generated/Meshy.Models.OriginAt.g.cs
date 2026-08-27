@@ -4,16 +4,16 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum OriginAt
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bottom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Center,
     }

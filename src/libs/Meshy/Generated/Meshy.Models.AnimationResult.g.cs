@@ -4,36 +4,36 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AnimationResult
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("animation_glb_url")]
         public string? AnimationGlbUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("animation_fbx_url")]
         public string? AnimationFbxUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("processed_usdz_url")]
         public string? ProcessedUsdzUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("processed_armature_fbx_url")]
         public string? ProcessedArmatureFbxUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("processed_animation_fps_fbx_url")]
         public string? ProcessedAnimationFpsFbxUrl { get; set; }

@@ -11,7 +11,7 @@ namespace Meshy
     public sealed partial class MeshyClient : global::Meshy.IMeshyClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://api.meshy.ai/";
 
@@ -38,7 +38,7 @@ namespace Meshy
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Meshy.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
@@ -48,7 +48,7 @@ namespace Meshy
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AnimationClient Animation => new AnimationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -57,7 +57,7 @@ namespace Meshy
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public BalanceClient Balance => new BalanceClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -66,7 +66,7 @@ namespace Meshy
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImageTo3dClient ImageTo3d => new ImageTo3dClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -75,7 +75,7 @@ namespace Meshy
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImageToImageClient ImageToImage => new ImageToImageClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -84,7 +84,7 @@ namespace Meshy
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MultiImageTo3dClient MultiImageTo3d => new MultiImageTo3dClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -93,7 +93,7 @@ namespace Meshy
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RemeshClient Remesh => new RemeshClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -102,7 +102,7 @@ namespace Meshy
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RetextureClient Retexture => new RetextureClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -111,7 +111,7 @@ namespace Meshy
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RiggingClient Rigging => new RiggingClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -120,7 +120,7 @@ namespace Meshy
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextTo3dClient TextTo3d => new TextTo3dClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -129,7 +129,7 @@ namespace Meshy
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextToImageClient TextToImage => new TextToImageClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {

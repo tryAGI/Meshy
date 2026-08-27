@@ -9,11 +9,11 @@ namespace Meshy
     public enum ModelType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lowpoly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Standard,
     }

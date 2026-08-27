@@ -4,7 +4,7 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AnimationRequest
     {
@@ -23,7 +23,7 @@ namespace Meshy
         public required int ActionId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("post_process")]
         public global::Meshy.AnimationPostProcess? PostProcess { get; set; }

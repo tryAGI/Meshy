@@ -40,58 +40,58 @@ namespace Meshy
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AnimationClient Animation { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public BalanceClient Balance { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImageTo3dClient ImageTo3d { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ImageToImageClient ImageToImage { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MultiImageTo3dClient MultiImageTo3d { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RemeshClient Remesh { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RetextureClient Retexture { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RiggingClient Rigging { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextTo3dClient TextTo3d { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextToImageClient TextToImage { get; }
 

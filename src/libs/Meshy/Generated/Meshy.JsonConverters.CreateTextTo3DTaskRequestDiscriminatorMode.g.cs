@@ -20,7 +20,7 @@ namespace Meshy.JsonConverters
                     {
                         return global::Meshy.CreateTextTo3DTaskRequestDiscriminatorModeExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

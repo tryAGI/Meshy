@@ -9,11 +9,11 @@ namespace Meshy
     public enum Topology
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Quad,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Triangle,
     }

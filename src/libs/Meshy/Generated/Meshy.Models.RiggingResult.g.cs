@@ -4,24 +4,24 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class RiggingResult
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rigged_character_fbx_url")]
         public string? RiggedCharacterFbxUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rigged_character_glb_url")]
         public string? RiggedCharacterGlbUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("basic_animations")]
         public global::Meshy.BasicAnimations? BasicAnimations { get; set; }

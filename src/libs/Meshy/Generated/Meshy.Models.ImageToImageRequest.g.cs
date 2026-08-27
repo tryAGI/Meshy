@@ -4,12 +4,12 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ImageToImageRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ai_model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshy.JsonConverters.ImageAiModelJsonConverter))]

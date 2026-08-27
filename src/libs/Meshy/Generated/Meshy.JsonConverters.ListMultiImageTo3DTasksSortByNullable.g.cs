@@ -20,7 +20,7 @@ namespace Meshy.JsonConverters
                     {
                         return global::Meshy.ListMultiImageTo3DTasksSortByExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

@@ -4,12 +4,12 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AnimationPostProcess
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("operation_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshy.JsonConverters.AnimationPostProcessOperationTypeJsonConverter))]

@@ -4,7 +4,7 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class RemeshRequest
     {
@@ -53,7 +53,7 @@ namespace Meshy
         public bool? AutoSize { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("origin_at")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshy.JsonConverters.OriginAtJsonConverter))]

@@ -9,15 +9,15 @@ namespace Meshy
     public enum AiModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Latest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Meshy5,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Meshy6,
     }

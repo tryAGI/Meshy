@@ -4,7 +4,7 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class RetextureRequest
     {
@@ -60,7 +60,7 @@ namespace Meshy
         public bool? RemoveLighting { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("target_formats")]
         public global::System.Collections.Generic.IList<global::Meshy.TargetFormat3D>? TargetFormats { get; set; }

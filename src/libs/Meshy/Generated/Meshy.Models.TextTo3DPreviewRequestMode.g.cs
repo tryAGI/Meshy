@@ -4,12 +4,12 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TextTo3DPreviewRequestMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preview,
     }

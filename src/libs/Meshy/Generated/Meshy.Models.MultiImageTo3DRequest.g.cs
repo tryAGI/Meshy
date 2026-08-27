@@ -4,7 +4,7 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class MultiImageTo3DRequest
     {
@@ -67,20 +67,20 @@ namespace Meshy
         public bool? EnablePbr { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pose_mode")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshy.JsonConverters.PoseModeJsonConverter))]
         public global::Meshy.PoseMode? PoseMode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("texture_prompt")]
         public string? TexturePrompt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("texture_image_url")]
         public string? TextureImageUrl { get; set; }
@@ -104,7 +104,7 @@ namespace Meshy
         public bool? RemoveLighting { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("target_formats")]
         public global::System.Collections.Generic.IList<global::Meshy.TargetFormat3D>? TargetFormats { get; set; }
@@ -116,7 +116,7 @@ namespace Meshy
         public bool? AutoSize { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("origin_at")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshy.JsonConverters.OriginAtJsonConverter))]

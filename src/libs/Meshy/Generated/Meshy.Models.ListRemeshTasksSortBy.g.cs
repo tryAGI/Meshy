@@ -4,16 +4,16 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListRemeshTasksSortBy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PluscreatedAt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinuscreatedAt,
     }
