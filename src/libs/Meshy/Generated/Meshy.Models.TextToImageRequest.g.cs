@@ -4,12 +4,12 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TextToImageRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ai_model")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshy.JsonConverters.ImageAiModelJsonConverter))]
@@ -31,7 +31,7 @@ namespace Meshy
         public bool? GenerateMultiView { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pose_mode")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshy.JsonConverters.TextToImageRequestPoseModeJsonConverter))]

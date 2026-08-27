@@ -4,16 +4,16 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TextToImageRequestPoseMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         APose,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TPose,
     }

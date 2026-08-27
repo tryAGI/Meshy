@@ -4,20 +4,20 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AnimationPostProcessOperationType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChangeFps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExtractArmature,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fbx2usdz,
     }

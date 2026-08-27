@@ -4,12 +4,12 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TextTo3DPreviewRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mode")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshy.JsonConverters.TextTo3DPreviewRequestModeJsonConverter))]
@@ -70,7 +70,7 @@ namespace Meshy
         public global::Meshy.SymmetryMode? SymmetryMode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pose_mode")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshy.JsonConverters.PoseModeJsonConverter))]
@@ -83,7 +83,7 @@ namespace Meshy
         public bool? Moderation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("target_formats")]
         public global::System.Collections.Generic.IList<global::Meshy.TargetFormat3D>? TargetFormats { get; set; }
@@ -95,7 +95,7 @@ namespace Meshy
         public bool? AutoSize { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("origin_at")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Meshy.JsonConverters.OriginAtJsonConverter))]

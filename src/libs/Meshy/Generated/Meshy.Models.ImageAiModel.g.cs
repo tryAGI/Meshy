@@ -4,16 +4,16 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ImageAiModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NanoBanana,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NanoBananaPro,
     }

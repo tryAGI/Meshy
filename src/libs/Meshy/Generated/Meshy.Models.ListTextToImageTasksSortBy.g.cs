@@ -4,16 +4,16 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListTextToImageTasksSortBy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PluscreatedAt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinuscreatedAt,
     }

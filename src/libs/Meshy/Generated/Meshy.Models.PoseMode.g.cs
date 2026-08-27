@@ -4,16 +4,16 @@
 namespace Meshy
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PoseMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         APose,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TPose,
     }

@@ -9,11 +9,11 @@ namespace Meshy
     public enum TextTo3DPreviewRequestArtStyle
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Realistic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sculpture,
     }
