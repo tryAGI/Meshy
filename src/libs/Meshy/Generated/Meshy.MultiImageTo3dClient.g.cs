@@ -34,7 +34,7 @@ namespace Meshy
         /// <inheritdoc/>
         public global::Meshy.AutoSDKClientOptions Options { get; }
 
-        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Meshy.SourceGenerationContext.Default);
+        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Meshy.MultiImageTo3dSourceGenerationContext.Default);
 
         /// <summary>
         ///
