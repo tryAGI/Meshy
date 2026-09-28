@@ -47,8 +47,8 @@ namespace Meshy
         /// <summary>
         ///
         /// </summary>
-        public global::Meshy.TextTo3DPreviewRequest PickPreview() => IsPreview
-            ? Preview!
+        public global::Meshy.TextTo3DPreviewRequest PickPreview() => Preview is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Preview' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace Meshy
         /// <summary>
         ///
         /// </summary>
-        public global::Meshy.TextTo3DRefineRequest PickRefine() => IsRefine
-            ? Refine!
+        public global::Meshy.TextTo3DRefineRequest PickRefine() => Refine is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Refine' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace Meshy
                 Validate();
             }
 
-            if (IsPreview && preview != null)
+            if (Preview is { } __value0 && preview != null)
             {
-                return preview(Preview!);
+                return preview(__value0);
             }
-            else if (IsRefine && refine != null)
+            else if (Refine is { } __value1 && refine != null)
             {
-                return refine(Refine!);
+                return refine(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace Meshy
                 Validate();
             }
 
-            if (IsPreview)
+            if (Preview is { } __value0)
             {
-                preview?.Invoke(Preview!);
+                preview?.Invoke(__value0);
             }
-            else if (IsRefine)
+            else if (Refine is { } __value1)
             {
-                refine?.Invoke(Refine!);
+                refine?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace Meshy
                 Validate();
             }
 
-            if (IsPreview)
+            if (Preview is { } __value0)
             {
-                preview?.Invoke(Preview!);
+                preview?.Invoke(__value0);
             }
-            else if (IsRefine)
+            else if (Refine is { } __value1)
             {
-                refine?.Invoke(Refine!);
+                refine?.Invoke(__value1);
             }
         }
 
